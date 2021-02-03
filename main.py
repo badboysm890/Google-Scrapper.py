@@ -1,6 +1,6 @@
 import requests 
 import bs4 
-text= "guvi"
+text= input("What Should i seach Boss")
 url = 'https://google.com/search?q=' + text  
 request_result=requests.get( url )  
 soup = bs4.BeautifulSoup(request_result.text, "html.parser") 
